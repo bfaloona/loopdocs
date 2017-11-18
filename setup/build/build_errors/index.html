@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Build Errors - Loop Docs</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-109876065-1', 'loopkit.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Requirements</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../requirements/pump/">Insulin Pump</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/cgm/">CGM</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/rileylink/">RileyLink</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/computer/">Computer</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/iphone/">iPhone</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/appledev/">Apple Developer</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Build and Install</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../installing/">Installing</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Build Errors</a>
+</li>
+
+        
+            
+<li >
+    <a href="../code_customization/">Code Customization</a>
+</li>
+
+        
+            
+<li >
+    <a href="../configuration/">Configuration</a>
+</li>
+
+        
+            
+<li >
+    <a href="../updating/">Updating</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../operation/overview/">App Screens</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How To Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/loop/green-loop/">Getting a Green Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Features</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/features/watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/healthapp/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/workout/">Workout Targets</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../../operation/new-version/">New Version Info</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/mlab_cleanup/">mLab</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/new_user/">Setup New Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../installing/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../code_customization/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#build-errors">Build Errors</a></li>
+        
+            <li><a href="#yellow-error-alerts">Yellow Error Alerts</a></li>
+        
+            <li><a href="#red-error-alerts">Red Error Alerts</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Permanent link">⌁</a></h2>
+<h3 id="yellow-error-alerts">Yellow Error Alerts<a class="headerlink" href="#yellow-error-alerts" title="Permanent link">⌁</a></h3>
+<p><strong>Yellow error alerts</strong> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.</p>
+<p align="center">
+<img src="../img/master-done.png" width="750">
+</p>
+
+<h3 id="red-error-alerts">Red Error Alerts<a class="headerlink" href="#red-error-alerts" title="Permanent link">⌁</a></h3>
+<p><strong>Red error alerts</strong> will prevent Loop from building on your phone, and you can read what the failure was.  The most common red error alerts are:</p>
+<ol>
+<li>"<strong><u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u></strong>"  You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.
+<p align="center">
+<img src="../img/license.png" width="750">
+</p></li>
+<li>"<strong><u>Swift Language Version” (SWIFT_VERSION) is required to be configured correctly</u></strong> for targets which use Swift. Use the [Edit &gt; Convert &gt; To Current Swift Syntax…] menu to choose a Swift version or use the Build Settings editor to configure the build setting directly"  or also "Could not locate device support files.  This iPhone is running iOS 11, which may not be supported by this version of Xcode."  You will need to go to your computer's App Store and install the Xcode app update.
+<p align="center">
+<img src="../img/old_xcode.jpg" width="750">
+</p>
+<p align="center">
+<img src="../img/old_xcode2.jpg" width="750">
+</p>
+<p align="center">
+<img src="../img/update.jpg" width="750">
+</p></li>
+<li>"<strong><u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.2</u></strong>"  Xcode was recently updated to version 9.1, and the currently Loop master branch will produce this error message if you are building with Xcode 9.1.
+<p align="center">
+<img src="../img/xcode9_1.png" width="750">
+</p>
+You can build with the Loop's dev branch (the dev branch has the fix built in) or just perform the following steps, if building with master branch:<ul>
+<li>Close Xcode</li>
+<li>Open Terminal App</li>
+<li>Navigate to your Loop download by doing the command:
+    <code>cd downloads/Loop-master</code>
+    (or whatever you named your Loop folder...go check)</li>
+<li>Now use the command:
+    <code>carthage bootstrap</code>
+    It will run for about 4-5 minutes and then show you a screen like below.
+        <p align="center">
+        <img src="../img/carthage-bootstrap.png" width="750">
+        </p></li>
+<li>If during the run of <code>carthage bootstrap</code>, you instead see an error message like below:
+                </p>
+                <p align="center">
+                <img src="../img/exit-code-72.jpg" width="550">
+                </p>
+                Please go to your Xcode preferences, under the Locations tab, select <code>Xcode 9.1</code> under the Command Line Tools
+                <p align="center">
+                <img src="../img/command-line-tools.png" width="750">
+                </p></li>
+<li>Reopen your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
+        <p align="center">
+        <img src="../img/yellow-update.png" width="750">
+        </p></li>
+</ul>
+</li>
+<li>"<strong><u>Swift Compilier Error.  Module compiled with Swift 3.1 cannot be imported in Swift 3.2</u></strong>"  Make sure your Xcode and Loop source code are updated (see item above). <strong>Older Loop versions (older than v1.5) will not compile with the new Xcode 9 app.</strong>
+<p align="center">
+<img src="../img/swift_errors.png" width="750">
+</p></li>
+<li>"<strong><u>Embedded Binary Validation Utility.  error: Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier</u></strong>".  This error usually happens because you've used an incorrect syntax in the MAIN_APP_BUNDLE_ID (like adding an extension to it) or forgotten to save project after the MAIN_APP_BUNDLE_ID was changed (the save forces Xcode to update all the targets to use the Main App Bundle ID within their individual bundle names).  In any case however, usually this error is most easily solved by closing out your project, deleting the download folder, and starting with a fresh download of Loop app.  The next time you build, make sure to follow the directions carefully to use a MAIN_APP_BUNDLE_ID in the right format and press <code>command-s</code> to force Xcode to update the targets' naming scheme correction.
+<p align="center">
+<img src="../img/bundle_fail.jpg" width="750">
+</p></li>
+<li>"<strong><u>Abort with payload</u></strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.  This error message is cause by having your Loop folder either (1) saved into an iCloud mapped drive or (2) having a space in the name of your downloaded Loop source code folder.  Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
+<p align="center">
+<img src="../img/abort_payload.png" width="750">
+</p></li>
+<li>"<strong><u>Shell Script Invocation Error.  Command /bin/sh failed with exit code 127</u></strong>"  This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update to Loop v1.5, please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
+<p align="center">
+<img src="../img/exit127.jpg" width="450">
+</p></li>
+<li><strong><u>Apple watch app is not appearing</u></strong>.  Usually because you have not updated to watchOS 4 prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
