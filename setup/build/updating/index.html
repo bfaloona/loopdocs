@@ -471,7 +471,7 @@ Depending on your browser and settings, your Loop download may or may not automa
 </p></p>
 </div>
 <h3 id="change-main-app-bundle-id-and-build">Change Main App Bundle ID and Build<a class="headerlink" href="#change-main-app-bundle-id-and-build" title="Permanent link">⌁</a></h3>
-<p><strong><u>Follow the guide for installation as you did before, beginning <a href="https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode">HERE</a> to navigate to your newly downloaded source code.</u></strong></p>
+<p><strong><u>Follow the guide for installation as you did before, beginning <a href="../installing/#installing-loop-using-xcode">HERE</a> to navigate to your newly downloaded source code.</u></strong></p>
 <p>The most common error in updating a Loop app is to use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in your original Loop build.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your iPhone will have a brand new second Loop app and none of the settings from the original Loop app will carry over.  While some people use this technique intentionally, you will have to be aware that you cannot successfully loop with two different Loop apps actively running (opened) at the same time on the same iPhone.  So, you will have to make sure you double-tap the home button and up-swipe to close out any unused Loop apps that you don't need running.</p>
 <p>If you <strong>use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation</strong>, all your old settings will be preserved and you will not have to re-enter them.  If you can't remember what you used on your current Loop app, you can open your old Loop folder on your computer, click on the <code>Loop.xcconfig</code> file, and check what you used.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled <code>appGroupName</code> that is within the RileyLinkDevice section of the Issue Report.  Your MAIN_APP_BUNDLE_IDENTIFIER is shown within that area.  <strong>Don't forget to save your project after changing the MAIN_APP_BUNDLE_IDENTIFIER.</strong></p>
 <p align="center">
@@ -484,7 +484,7 @@ Depending on your browser and settings, your Loop download may or may not automa
 </p>
 
 <p>Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.</p>
-<p>Sign the four targets and rebuild.  If you get any build errors, please check <a href="https://loopkit.github.io/loopdocs/build/installing/#build-errors">this section</a> for fixes.</p></div>
+<p>Sign the four targets and rebuild.  If you get any build errors, please check <a href="../build_errors/">this section</a> for fixes.</p></div>
         </div>
 
         <footer class="col-md-12">
