@@ -1232,7 +1232,7 @@
         },
         {
             "location": "/nightscout/loop_pill/",
-            "text": "Loop Pill in Nightscout \u00a0 \n\u2301\n\n\nThe Loop pill in Nightscout provides Loop status at a glance, including how many minutes ago the status was received.\n\n\nStatus Indicator\n\u2301\n\n\nA small icon in the middle of the pill indicates the latest known status.\n\n\n\n\nStatus indicator symbols\n\n\nX\n \u00a0\nError in Loop\n\n\n\u03d5\n \u00a0\nRecommending basal, but not enacting (open loop or pump suspended)\n\n\n\u2301\n \u00a0\nEnacted a new temp basal\n\n\n\u21bb\n \u00a0\nLoop is continuing with last temp basal, no change\n\n\n\u26a0\n \u00a0\nWarning (Loop has not completed since since the time set on your LOOP_WARN setting in NS)\n\n\n\n\nStatus Information\n\u2301\n\n\nMouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. For example:\n\n\n\n\n\n\nTroubleshooting Loop\n\u2301\n\n\nIf you are getting unexpected status, review the \nGetting a Green Loop\n page. To learn more about a specific error message, review the \nCommon Error Messages\n section on that page.",
+            "text": "Loop Pill in Nightscout \u00a0 \n\u2301\n\n\nThe Loop pill in Nightscout provides Loop status at a glance, including how many minutes ago the status was received.\n\n\nStatus Indicator\n\u2301\n\n\nA small icon in the middle of the pill indicates the latest known status.\n\n\n\n\nStatus indicator symbols\n\n\nX\n \u00a0\nError in Loop\n\n\n\u03d5\n \u00a0\nRecommending basal, but not enacting (open loop or pump suspended)\n\n\n\u2301\n \u00a0\nEnacted a new temp basal\n\n\n\u21bb\n \u00a0\nLoop is continuing with last temp basal, no change\n\n\n\u26a0\n \u00a0\nWarning (Loop has not completed since since the time set on your LOOP_WARN setting in NS)\n\n\n\n\nStatus Information\n\u2301\n\n\nMouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. For example:\n\n\n\n\n\n\nTroubleshooting Loop\n\u2301\n\n\nIf you are getting unexpected status, review the \nGetting a Green Loop\n page. To find a specific error message, search the site for all or part of the message.",
             "title": "Loop Pill"
         },
         {
@@ -1252,7 +1252,7 @@
         },
         {
             "location": "/nightscout/loop_pill/#troubleshooting-loop",
-            "text": "If you are getting unexpected status, review the  Getting a Green Loop  page. To learn more about a specific error message, review the  Common Error Messages  section on that page.",
+            "text": "If you are getting unexpected status, review the  Getting a Green Loop  page. To find a specific error message, search the site for all or part of the message.",
             "title": "Troubleshooting Loop"
         },
         {
